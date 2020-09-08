@@ -138,12 +138,19 @@ type baseBalancer struct {
 	picker picker.Picker
 }
 
-// HandleResolvedAddrs implements "grpc/balancer.Balancer" interface.
-// gRPC sends initial or updated resolved addresses from "Build".
-func (bb *baseBalancer) HandleResolvedAddrs(addrs []resolver.Address, err error) {
+// UpdateClientConnState implements "grpc/balancer.Balancer" interface.  gRPC
+// sends initial or updated resolved addresses from "Build".
+func (bb *baseBalancer) UpdateClientConnState(connState balancer.ClientConnState) error {
+	addrs := connState.ResolverState.Addresses
+	var err error
+	if connState.ResolverState.ServiceConfig != nil {
+		if connState.ResolverState.ServiceConfig.Err != nil {
+			err = connState.ResolverState.ServiceConfig.Err
+		}
+	}
 	if err != nil {
 		bb.lg.Warn("HandleResolvedAddrs called with error", zap.String("balancer-id", bb.id), zap.Error(err))
-		return
+		return nil
 	}
 	bb.lg.Info("resolved",
 		zap.String("picker", bb.picker.String()),
@@ -191,12 +198,16 @@ func (bb *baseBalancer) HandleResolvedAddrs(addrs []resolver.Address, err error)
 			// (DO NOT) delete(bb.scToSt, sc)
 		}
 	}
+
+	return nil
 }
 
-// HandleSubConnStateChange implements "grpc/balancer.Balancer" interface.
-func (bb *baseBalancer) HandleSubConnStateChange(sc balancer.SubConn, s grpcconnectivity.State) {
+// UpdateSubConnState implements "grpc/balancer.Balancer" interface.
+func (bb *baseBalancer) UpdateSubConnState(sc balancer.SubConn, subs balancer.SubConnState) {
 	bb.mu.Lock()
 	defer bb.mu.Unlock()
+
+	s := subs.ConnectivityState
 
 	old, ok := bb.scToSt[sc]
 	if !ok {
@@ -247,7 +258,11 @@ func (bb *baseBalancer) HandleSubConnStateChange(sc balancer.SubConn, s grpcconn
 		bb.updatePicker()
 	}
 
-	bb.currentConn.UpdateBalancerState(bb.connectivityRecorder.GetCurrentState(), bb.picker)
+	newstate := balancer.State{
+		ConnectivityState: bb.connectivityRecorder.GetCurrentState(),
+		Picker:            bb.picker,
+	}
+	bb.currentConn.UpdateState(newstate)
 }
 
 func (bb *baseBalancer) updatePicker() {
@@ -283,6 +298,10 @@ func (bb *baseBalancer) updatePicker() {
 		zap.Strings("subconn-ready", scsToStrings(scToAddr)),
 		zap.Int("subconn-size", len(scToAddr)),
 	)
+}
+
+func (bb *baseBalancer) ResolverError(err error) {
+	// TODO
 }
 
 // Close implements "grpc/balancer.Balancer" interface.

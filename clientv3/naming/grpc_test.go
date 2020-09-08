@@ -24,7 +24,7 @@ import (
 	"github.com/coreos/etcd/integration"
 	"github.com/coreos/etcd/pkg/testutil"
 
-	"google.golang.org/grpc/naming"
+	naming "github.com/coreos/etcd/grpcnaming"
 )
 
 func TestGRPCResolver(t *testing.T) {

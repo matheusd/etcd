@@ -23,7 +23,7 @@ import (
 	"github.com/coreos/etcd/integration"
 	"github.com/coreos/etcd/pkg/testutil"
 
-	gnaming "google.golang.org/grpc/naming"
+	gnaming "github.com/coreos/etcd/grpcnaming"
 )
 
 func TestRegister(t *testing.T) {
