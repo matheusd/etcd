@@ -36,7 +36,7 @@ require (
 	github.com/onsi/gomega v1.10.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/prometheus/client_golang v0.9.0-pre1.0.20171005112915-5cec1d0429b0
-	github.com/prometheus/client_model v0.0.0-20170216185247-6f3806018612
+	github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4
 	github.com/prometheus/common v0.0.0-20171104095907-e3fb1a1acd76 // indirect
 	github.com/prometheus/procfs v0.0.0-20171017214025-a6e9df898b13 // indirect
 	github.com/russross/blackfriday v0.0.0-20170728175326-4048872b16cc // indirect
@@ -53,8 +53,8 @@ require (
 	golang.org/x/crypto v0.0.0-20190510104115-cbcb75029529
 	golang.org/x/net v0.0.0-20200520004742-59133d7f0dd7
 	golang.org/x/time v0.0.0-20170420181420-c06e80d9300e
-	google.golang.org/genproto v0.0.0-20180817151627-c66870c02cf8
-	google.golang.org/grpc v1.23.0
+	google.golang.org/genproto v0.0.0-20190819201941-24fa4b261c55
+	google.golang.org/grpc v1.27.1
 	gopkg.in/airbrake/gobrake.v2 v2.0.9 // indirect
 	gopkg.in/cheggaaa/pb.v1 v1.0.2
 	gopkg.in/gemnasium/logrus-airbrake-hook.v2 v2.1.2 // indirect
