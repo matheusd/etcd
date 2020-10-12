@@ -21,12 +21,12 @@ import (
 	"net/http"
 	"strings"
 
-	etcdErr "github.com/coreos/etcd/error"
-	"github.com/coreos/etcd/etcdserver"
-	"github.com/coreos/etcd/etcdserver/api"
-	"github.com/coreos/etcd/etcdserver/api/v2http/httptypes"
-	"github.com/coreos/etcd/pkg/logutil"
-	"github.com/coreos/etcd/version"
+	etcdErr "github.com/matheusd/etcd/error"
+	"github.com/matheusd/etcd/etcdserver"
+	"github.com/matheusd/etcd/etcdserver/api"
+	"github.com/matheusd/etcd/etcdserver/api/v2http/httptypes"
+	"github.com/matheusd/etcd/pkg/logutil"
+	"github.com/matheusd/etcd/version"
 	"github.com/coreos/pkg/capnslog"
 )
 

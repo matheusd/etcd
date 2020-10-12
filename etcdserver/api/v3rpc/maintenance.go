@@ -20,14 +20,14 @@ import (
 	"io"
 	"time"
 
-	"github.com/coreos/etcd/auth"
-	"github.com/coreos/etcd/etcdserver"
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
-	"github.com/coreos/etcd/mvcc"
-	"github.com/coreos/etcd/mvcc/backend"
-	"github.com/coreos/etcd/pkg/types"
-	"github.com/coreos/etcd/version"
+	"github.com/matheusd/etcd/auth"
+	"github.com/matheusd/etcd/etcdserver"
+	"github.com/matheusd/etcd/etcdserver/api/v3rpc/rpctypes"
+	pb "github.com/matheusd/etcd/etcdserver/etcdserverpb"
+	"github.com/matheusd/etcd/mvcc"
+	"github.com/matheusd/etcd/mvcc/backend"
+	"github.com/matheusd/etcd/pkg/types"
+	"github.com/matheusd/etcd/version"
 	"github.com/dustin/go-humanize"
 )
 

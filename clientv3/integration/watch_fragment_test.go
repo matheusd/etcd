@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/integration"
-	"github.com/coreos/etcd/pkg/testutil"
+	"github.com/matheusd/etcd/clientv3"
+	"github.com/matheusd/etcd/integration"
+	"github.com/matheusd/etcd/pkg/testutil"
 )
 
 // TestWatchFragmentDisable ensures that large watch

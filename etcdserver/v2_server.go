@@ -18,8 +18,8 @@ import (
 	"context"
 	"time"
 
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
-	"github.com/coreos/etcd/store"
+	pb "github.com/matheusd/etcd/etcdserver/etcdserverpb"
+	"github.com/matheusd/etcd/store"
 )
 
 type RequestV2 pb.Request

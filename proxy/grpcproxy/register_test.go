@@ -18,12 +18,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/clientv3/naming"
-	"github.com/coreos/etcd/integration"
-	"github.com/coreos/etcd/pkg/testutil"
+	"github.com/matheusd/etcd/clientv3"
+	"github.com/matheusd/etcd/clientv3/naming"
+	"github.com/matheusd/etcd/integration"
+	"github.com/matheusd/etcd/pkg/testutil"
 
-	gnaming "github.com/coreos/etcd/grpcnaming"
+	gnaming "github.com/matheusd/etcd/grpcnaming"
 )
 
 func TestRegister(t *testing.T) {

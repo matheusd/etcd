@@ -15,8 +15,8 @@
 package v2v3
 
 import (
-	"github.com/coreos/etcd/etcdserver/membership"
-	"github.com/coreos/etcd/pkg/types"
+	"github.com/matheusd/etcd/etcdserver/membership"
+	"github.com/matheusd/etcd/pkg/types"
 
 	"github.com/coreos/go-semver/semver"
 )

@@ -20,11 +20,11 @@ import (
 	"reflect"
 	"testing"
 
-	etcd "github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/integration"
-	"github.com/coreos/etcd/pkg/testutil"
+	etcd "github.com/matheusd/etcd/clientv3"
+	"github.com/matheusd/etcd/integration"
+	"github.com/matheusd/etcd/pkg/testutil"
 
-	naming "github.com/coreos/etcd/grpcnaming"
+	naming "github.com/matheusd/etcd/grpcnaming"
 )
 
 func TestGRPCResolver(t *testing.T) {

@@ -19,9 +19,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/coreos/etcd/integration"
-	"github.com/coreos/etcd/pkg/testutil"
-	"github.com/coreos/etcd/pkg/types"
+	"github.com/matheusd/etcd/integration"
+	"github.com/matheusd/etcd/pkg/testutil"
+	"github.com/matheusd/etcd/pkg/types"
 )
 
 func TestMemberList(t *testing.T) {

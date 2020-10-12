@@ -24,11 +24,11 @@ import (
 	"strings"
 	"time"
 
-	pioutil "github.com/coreos/etcd/pkg/ioutil"
-	"github.com/coreos/etcd/pkg/types"
-	"github.com/coreos/etcd/raft/raftpb"
-	"github.com/coreos/etcd/snap"
-	"github.com/coreos/etcd/version"
+	pioutil "github.com/matheusd/etcd/pkg/ioutil"
+	"github.com/matheusd/etcd/pkg/types"
+	"github.com/matheusd/etcd/raft/raftpb"
+	"github.com/matheusd/etcd/snap"
+	"github.com/matheusd/etcd/version"
 	"github.com/dustin/go-humanize"
 )
 

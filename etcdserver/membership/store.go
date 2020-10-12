@@ -19,9 +19,9 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/coreos/etcd/mvcc/backend"
-	"github.com/coreos/etcd/pkg/types"
-	"github.com/coreos/etcd/store"
+	"github.com/matheusd/etcd/mvcc/backend"
+	"github.com/matheusd/etcd/pkg/types"
+	"github.com/matheusd/etcd/store"
 
 	"github.com/coreos/go-semver/semver"
 )

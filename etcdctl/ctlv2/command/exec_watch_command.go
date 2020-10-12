@@ -22,7 +22,7 @@ import (
 	"os/exec"
 	"os/signal"
 
-	"github.com/coreos/etcd/client"
+	"github.com/matheusd/etcd/client"
 
 	"github.com/urfave/cli"
 )

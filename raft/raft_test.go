@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	pb "github.com/coreos/etcd/raft/raftpb"
+	pb "github.com/matheusd/etcd/raft/raftpb"
 )
 
 // nextEnts returns the appliable entries and updates the applied index

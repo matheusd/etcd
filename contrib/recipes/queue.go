@@ -17,8 +17,8 @@ package recipe
 import (
 	"context"
 
-	v3 "github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/mvcc/mvccpb"
+	v3 "github.com/matheusd/etcd/clientv3"
+	"github.com/matheusd/etcd/mvcc/mvccpb"
 )
 
 // Queue implements a multi-reader, multi-writer distributed queue.

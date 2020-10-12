@@ -9,7 +9,7 @@ import (
 	math "math"
 	math_bits "math/bits"
 
-	etcdserverpb "github.com/coreos/etcd/etcdserver/etcdserverpb"
+	etcdserverpb "github.com/matheusd/etcd/etcdserver/etcdserverpb"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/golang/protobuf/proto"
 )

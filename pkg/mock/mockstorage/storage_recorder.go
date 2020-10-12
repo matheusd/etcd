@@ -15,9 +15,9 @@
 package mockstorage
 
 import (
-	"github.com/coreos/etcd/pkg/testutil"
-	"github.com/coreos/etcd/raft"
-	"github.com/coreos/etcd/raft/raftpb"
+	"github.com/matheusd/etcd/pkg/testutil"
+	"github.com/matheusd/etcd/raft"
+	"github.com/matheusd/etcd/raft/raftpb"
 )
 
 type storageRecorder struct {

@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	"github.com/coreos/etcd/pkg/testutil"
+	"github.com/matheusd/etcd/etcdserver/api/v3rpc/rpctypes"
+	"github.com/matheusd/etcd/pkg/testutil"
 	"google.golang.org/grpc"
 )
 

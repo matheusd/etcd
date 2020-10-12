@@ -1,4 +1,4 @@
-module github.com/coreos/etcd
+module github.com/matheusd/etcd
 
 go 1.15
 

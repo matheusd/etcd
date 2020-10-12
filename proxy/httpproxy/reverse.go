@@ -27,7 +27,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/coreos/etcd/etcdserver/api/v2http/httptypes"
+	"github.com/matheusd/etcd/etcdserver/api/v2http/httptypes"
 	"github.com/coreos/pkg/capnslog"
 )
 

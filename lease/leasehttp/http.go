@@ -23,10 +23,10 @@ import (
 	"net/http"
 	"time"
 
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
-	"github.com/coreos/etcd/lease"
-	"github.com/coreos/etcd/lease/leasepb"
-	"github.com/coreos/etcd/pkg/httputil"
+	pb "github.com/matheusd/etcd/etcdserver/etcdserverpb"
+	"github.com/matheusd/etcd/lease"
+	"github.com/matheusd/etcd/lease/leasepb"
+	"github.com/matheusd/etcd/pkg/httputil"
 )
 
 var (

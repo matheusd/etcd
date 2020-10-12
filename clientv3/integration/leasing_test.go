@@ -23,11 +23,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/clientv3/concurrency"
-	"github.com/coreos/etcd/clientv3/leasing"
-	"github.com/coreos/etcd/integration"
-	"github.com/coreos/etcd/pkg/testutil"
+	"github.com/matheusd/etcd/clientv3"
+	"github.com/matheusd/etcd/clientv3/concurrency"
+	"github.com/matheusd/etcd/clientv3/leasing"
+	"github.com/matheusd/etcd/integration"
+	"github.com/matheusd/etcd/pkg/testutil"
 )
 
 func TestLeasingPutGet(t *testing.T) {

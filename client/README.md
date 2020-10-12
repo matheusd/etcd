@@ -27,7 +27,7 @@ import (
 	"time"
 	"context"
 
-	"github.com/coreos/etcd/client"
+	"github.com/matheusd/etcd/client"
 )
 
 func main() {

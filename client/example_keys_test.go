@@ -20,7 +20,7 @@ import (
 	"log"
 	"sort"
 
-	"github.com/coreos/etcd/client"
+	"github.com/matheusd/etcd/client"
 )
 
 func ExampleKeysAPI_directory() {

@@ -17,7 +17,7 @@ package raft
 import (
 	"testing"
 
-	pb "github.com/coreos/etcd/raft/raftpb"
+	pb "github.com/matheusd/etcd/raft/raftpb"
 )
 
 var (

@@ -20,12 +20,12 @@ import (
 	"os"
 	"sync"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/clientv3/naming"
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
+	"github.com/matheusd/etcd/clientv3"
+	"github.com/matheusd/etcd/clientv3/naming"
+	"github.com/matheusd/etcd/etcdserver/api/v3rpc/rpctypes"
+	pb "github.com/matheusd/etcd/etcdserver/etcdserverpb"
 
-	gnaming "github.com/coreos/etcd/grpcnaming"
+	gnaming "github.com/matheusd/etcd/grpcnaming"
 	"golang.org/x/time/rate"
 )
 

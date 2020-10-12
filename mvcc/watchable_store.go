@@ -18,10 +18,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/coreos/etcd/auth"
-	"github.com/coreos/etcd/lease"
-	"github.com/coreos/etcd/mvcc/backend"
-	"github.com/coreos/etcd/mvcc/mvccpb"
+	"github.com/matheusd/etcd/auth"
+	"github.com/matheusd/etcd/lease"
+	"github.com/matheusd/etcd/mvcc/backend"
+	"github.com/matheusd/etcd/mvcc/mvccpb"
 )
 
 // non-const so modifiable by tests

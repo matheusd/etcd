@@ -22,10 +22,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/clientv3/mirror"
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	"github.com/coreos/etcd/mvcc/mvccpb"
+	"github.com/matheusd/etcd/clientv3"
+	"github.com/matheusd/etcd/clientv3/mirror"
+	"github.com/matheusd/etcd/etcdserver/api/v3rpc/rpctypes"
+	"github.com/matheusd/etcd/mvcc/mvccpb"
 
 	"github.com/spf13/cobra"
 )

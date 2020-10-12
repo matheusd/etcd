@@ -25,11 +25,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
-	"github.com/coreos/etcd/pkg/testutil"
-	"github.com/coreos/etcd/pkg/transport"
+	"github.com/matheusd/etcd/clientv3"
+	"github.com/matheusd/etcd/etcdserver/api/v3rpc/rpctypes"
+	pb "github.com/matheusd/etcd/etcdserver/etcdserverpb"
+	"github.com/matheusd/etcd/pkg/testutil"
+	"github.com/matheusd/etcd/pkg/transport"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

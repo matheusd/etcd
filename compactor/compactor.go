@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"time"
 
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
+	pb "github.com/matheusd/etcd/etcdserver/etcdserverpb"
 
 	"github.com/coreos/pkg/capnslog"
 )

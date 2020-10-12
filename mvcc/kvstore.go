@@ -24,10 +24,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/coreos/etcd/lease"
-	"github.com/coreos/etcd/mvcc/backend"
-	"github.com/coreos/etcd/mvcc/mvccpb"
-	"github.com/coreos/etcd/pkg/schedule"
+	"github.com/matheusd/etcd/lease"
+	"github.com/matheusd/etcd/mvcc/backend"
+	"github.com/matheusd/etcd/mvcc/mvccpb"
+	"github.com/matheusd/etcd/pkg/schedule"
 	"github.com/coreos/pkg/capnslog"
 )
 

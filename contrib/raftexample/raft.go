@@ -24,15 +24,15 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/coreos/etcd/etcdserver/stats"
-	"github.com/coreos/etcd/pkg/fileutil"
-	"github.com/coreos/etcd/pkg/types"
-	"github.com/coreos/etcd/raft"
-	"github.com/coreos/etcd/raft/raftpb"
-	"github.com/coreos/etcd/rafthttp"
-	"github.com/coreos/etcd/snap"
-	"github.com/coreos/etcd/wal"
-	"github.com/coreos/etcd/wal/walpb"
+	"github.com/matheusd/etcd/etcdserver/stats"
+	"github.com/matheusd/etcd/pkg/fileutil"
+	"github.com/matheusd/etcd/pkg/types"
+	"github.com/matheusd/etcd/raft"
+	"github.com/matheusd/etcd/raft/raftpb"
+	"github.com/matheusd/etcd/rafthttp"
+	"github.com/matheusd/etcd/snap"
+	"github.com/matheusd/etcd/wal"
+	"github.com/matheusd/etcd/wal/walpb"
 )
 
 // A key-value stream backed by raft

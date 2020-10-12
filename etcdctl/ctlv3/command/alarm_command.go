@@ -17,7 +17,7 @@ package command
 import (
 	"fmt"
 
-	v3 "github.com/coreos/etcd/clientv3"
+	v3 "github.com/matheusd/etcd/clientv3"
 	"github.com/spf13/cobra"
 )
 

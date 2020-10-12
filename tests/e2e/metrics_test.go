@@ -19,7 +19,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/coreos/etcd/version"
+	"github.com/matheusd/etcd/version"
 )
 
 func TestV3MetricsSecure(t *testing.T) {

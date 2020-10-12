@@ -18,11 +18,11 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/clientv3/concurrency"
-	"github.com/coreos/etcd/clientv3/naming"
+	"github.com/matheusd/etcd/clientv3"
+	"github.com/matheusd/etcd/clientv3/concurrency"
+	"github.com/matheusd/etcd/clientv3/naming"
 
-	gnaming "github.com/coreos/etcd/grpcnaming"
+	gnaming "github.com/matheusd/etcd/grpcnaming"
 	"golang.org/x/time/rate"
 )
 

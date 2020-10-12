@@ -20,10 +20,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/coreos/etcd/etcdserver/api/etcdhttp"
-	"github.com/coreos/etcd/etcdserver/api/v2http/httptypes"
-	"github.com/coreos/etcd/etcdserver/auth"
-	"github.com/coreos/etcd/pkg/logutil"
+	"github.com/matheusd/etcd/etcdserver/api/etcdhttp"
+	"github.com/matheusd/etcd/etcdserver/api/v2http/httptypes"
+	"github.com/matheusd/etcd/etcdserver/auth"
+	"github.com/matheusd/etcd/pkg/logutil"
 
 	"github.com/coreos/pkg/capnslog"
 )
